@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rio Lerma & Casa Amarilla    </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.jpeg" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>Los Chanos Rental</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>EXPERIENCIA DE CASA, CALIDAD DE HOTEL</h2>
+                <p>Lo mejor de dos mundos</p>
+                <button type = "button" class = "head-btn">VE NUESTROS LISTINGS</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">Inicio</a></li>
+                <li><a href = "#services">Servicios</a></li>
+                <li><a href = "#rooms">Espacios</a></li>
+                <li><a href = "#customers">Clientes Satisfechos</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>Servicios</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Servicio de Comida</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button type = "button" class = "btn">Conoce más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Estancias Vacacionales con Alberca</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button type = "button" class = "btn">Conoce más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Limpieza, buscamos una blancura impecable</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button type = "button" class = "btn">Conoce más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Seguridad y privacidad ante todo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis rem autem ex, reiciendis corporis suscipit!</p>
+                        <button type = "button" class = "btn">Conoce más</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Fecha de Check In: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Fecha de Check Out: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adultos: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Niños: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class="form-item">
+                    <label for="room">Habitación: </label>
+                    <select id="room" class="styled-select">
+                        <option value="Cuarto Roma">Cuarto Roma</option>
+                        <option value="Cuarto Reforma">Cuarto Reforma</option>
+                        <option value="Cuarto Condesa">Cuarto Condesa</option>
+                        <option value="Casa Amarilla">Casa Amarilla</option>
+                    </select>
+                </div>
+                
+                
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Rerserva por Airbnb">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>Espacios</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.png" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Cuarto Roma</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$599.00 /</span> Por Noche
+                        </p>
+                        <button type = "button" class = "btn">Reserva por Airbnb</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.png" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Cuarto Reforma</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$599.00 /</span> Por Noche
+                        </p>
+                        <button type = "button" class = "btn">Reserva por Airbnb</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.png" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Cuarto Condesa</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$599.00 /</span> Por Noche
+                        </p>
+                        <button type = "button" class = "btn">Reserva por Airbnb</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img4.png" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Casa Amarilla</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse commodi nemo?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>$1,499.00 /</span> Por Noche
+                        </p>
+                        <button type = "button" class = "btn">Reserva por Airbnb</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>clientes</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Cercano a la embajada de Estados Unidos</h3>
+                        <p>Una estancia muy cómoda, el departamento es muy amplio. Super cerca para quienes van por el trámite de la visa.</p>
+                        <img src = "images/cus1.png" alt = "customer image">
+                        <span>Jaime Moreno, CDMX</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Cercano a Reforma , Súper bueno</h3>
+                        <p>cercano de av reforma para muchas actividades o ir a trámites de visa, a 5 min caminando, super bueno :)</p>
+                        <img src = "images/cus2.png" alt = "customer image">
+                        <span>Antonio Pardo, Metepec, México</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <h3>Noviembre 2023</h3>
+                        <p>Excelentes atención y calidad. Cumple con lo que promete 🫶🏼</p>
+                        <img src = "images/cus3.png" alt = "customer image">
+                        <span>Guadalupe Minerva Álvarez Ortiz, Puebla, Puebla</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Acerca de nosotros </h2>
+                    <p>Buscamos propiedades para administrar en plataformas digitales de hospedaje y ofrecemos el mejor servicio a los huéspedes, que se sientan en casa con calidad de hotel.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Sitios de interés</h2>
+                    <a href = "#">Servicios</a>
+                    <a href = "#">Espacios</a>
+                    <a href = "#">Pitch de Inversión</a>
+                    <a href = "#">Acceso a Inversionitas</a>
+                </div>
+
+                <div>
+                    <h2>Privacidad</h2>
+                    <a href = "#">Carreras</a>
+                    <a href = "#">Acerca de nosotros</a>
+                    <a href = "#">Contactanos</a>
+                    <a href = "#">Servicios</a>
+                </div>
+
+                <div>
+                    <h2>Empecemos a platicar</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Rio Lerma 69, Cuauhtemoc, CDMX, Ciudad de México
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +52 1 55 6969 6969
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            contacto@chanosrental.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
